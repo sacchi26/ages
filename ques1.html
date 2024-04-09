@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User age filter</h1>
+</body>
+<script>
+    const names = ["Nrupul", "Prateek", "Aman", "Albert", "Yogesh"];
+const ages = [32, 30, 26, 28, 44];
+
+function generateData(names,ages){
+  const userData=[]
+  for(let i=0;i<names.length;i++){
+    userData.push({name:names[i],age:ages[i]})
+  }
+
+  for(i=0;i<userData.length;i++){
+    if(userData[i].age>30){
+      console.log({name:userData[i].name,age:userData[i].age})
+    }
+  }
+}
+
+
+generateData(names,ages)
+</script>
+</html>
